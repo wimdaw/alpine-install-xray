@@ -13,7 +13,7 @@ English | [中文(中国)](README_zh-cn.md) | [中文(薹灣)](README_zh-tw.md)
 ## Download
 
 ```
-$ curl -O https://raw.githubusercontent.com/XTLS/alpinelinux-install-xray/main/install-release.sh
+$ curl -O https://raw.githubusercontent.com/wimdaw/alpine-install-xray/main/install-release.sh
 ```
 
 ## Use
