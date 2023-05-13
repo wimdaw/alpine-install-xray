@@ -14,7 +14,7 @@
 ## 下载
 
 ```
-$ curl -O https://raw.githubusercontent.com/XTLS/alpinelinux-install-xray/main/install-release.sh
+$ curl -O https://raw.githubusercontent.com/wimdaw/alpine-install-xray/main/install-release.sh
 ```
 
 ## 使用
