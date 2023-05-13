@@ -56,7 +56,7 @@ esac
 
 TMP_DIRECTORY="$(mktemp -d)/"
 ZIP_FILE="${TMP_DIRECTORY}Xray-linux-$MACHINE.zip"
-DOWNLOAD_LINK="https://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-$MACHINE.zip"
+DOWNLOAD_LINK="https://github.com/XTLS/Xray-core/releases/download/v1.6.1/Xray-linux-$MACHINE.zip"
 
 install_software() {
     if [[ -n "$(command -v curl)" ]]; then
@@ -141,7 +141,7 @@ install_startup_service_file() {
     OPENRC='0'
     if [ ! -f '/etc/init.d/xray' ]; then
         mkdir "${TMP_DIRECTORY}init.d/"
-        curl -o "${TMP_DIRECTORY}init.d/xray" https://raw.githubusercontent.com/XTLS/alpinelinux-install-xray/main/init.d/xray -s
+        curl -o "${TMP_DIRECTORY}init.d/xray" https://raw.githubusercontent.com/wimdaw/alpine-install-xray/main/init.d/xray -s
         if [ "$?" -ne '0' ]; then
             echo 'error: Failed to start service file download! Please check your network or try again.'
             exit 1
